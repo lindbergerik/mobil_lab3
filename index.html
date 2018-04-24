@@ -13,6 +13,66 @@
 </head>
 
 <body>
-	<ons-button onclick="alert('Hello World!')">Click Me</ons-button>
+	<ons-navigator swipeable id="myNavigator" page="page1.html"></ons-navigator>
+	
+	<template id="page1.html">
+	  <ons-page id="page1">
+	    <ons-toolbar>
+	      <div class="center">Home</div>
+	    </ons-toolbar>
+
+	    <p>Welcome to Yelp GO</p>
+
+	    <ons-button id="button1">Barbro</ons-button>
+	    <ons-button id="button2">La Neta</ons-button>
+	    <ons-button id="button3">TAK</ons-button>
+	    <ons-button id="button4">About</ons-button>
+	  </ons-page>
+	</template>
+
+	<template id="page2.html">
+	  <ons-page id="page2">
+	    <ons-toolbar>
+	      <div class="left"><ons-back-button>Barbro</ons-back-button></div>
+	      <div class="center"></div>
+	    </ons-toolbar>
+	    <img src="img/img_02.png">
+	    <p>Barbro</p>
+	  </ons-page>
+	</template>
+
+	<template id="page3.html">
+	  <ons-page id="page3">
+	    <ons-toolbar>
+	      <div class="left"><ons-back-button>La Neta</ons-back-button></div>
+	      <div class="center"></div>
+	    </ons-toolbar>
+	    <img src="img/img_03.png">
+	    <p>La Neta</p>
+	  </ons-page>
+	</template>
+
+	<template id="page4.html">
+	  <ons-page id="page3">
+	    <ons-toolbar>
+	      <div class="left"><ons-back-button>TAK</ons-back-button></div>
+	      <div class="center"></div>
+	    </ons-toolbar>
+	    <img src="img/img_04.png">
+	    <p>TAK</p>
+	  </ons-page>
+	</template>
+
+	<template id="page5.html">
+	  <ons-page id="page5">
+	    <ons-toolbar>
+	      <div class="left"><ons-back-button>About</ons-back-button></div>
+	      <div class="center"></div>
+	    </ons-toolbar>
+	    <p>About</p>
+	  </ons-page>
+	</template>
+
+	<script src="app.js"></script>
 </body>
 </html>
