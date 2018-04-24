@@ -16,11 +16,11 @@
 
 <body>
 	<ons-page>
-	  <ons-toolbar>
-	    <div class="center">Tab 1</div>
+	  <ons-toolbar class="toolbar">
+	    <div id="header" class="center">Home</div>
 	  </ons-toolbar>
 	  <ons-tabbar swipeable position="auto">
-	    <ons-tab page="tab1.html" label="Home" icon="ion-home, material:md-home" badge="7" active>
+	    <ons-tab page="tab1.html" label="Home" icon="ion-home, material:md-home" active>
 	    </ons-tab>
 	    <ons-tab page="tab2.html" label="Barbro" icon="md-settings" active-icon="md-face">
 	    </ons-tab>
@@ -28,16 +28,15 @@
 	    </ons-tab>
 	    <ons-tab page="tab4.html" label="TAK" icon="md-settings" active-icon="md-face">
 	    </ons-tab>
-	    <ons-tab page="tab5.html" label="About" icon="md-settings" active-icon="md-face">
-	    </ons-tab>
 	  </ons-tabbar>
 	</ons-page>
 
 	<template id="tab1.html">
 	  <ons-page id="Tab1">
-	    <p style="text-align: center;">
-	      Welcome to Yelp GO
-	    </p>
+	  	<img src="img/img_01.png">
+	    <h1>About</h1>
+	    <p>Here you can find different restaurants from the Yelp application.</p>
+	    <p>But on our application instead</p>
 	  </ons-page>
 	</template>
 
@@ -55,6 +54,16 @@
 			<li>lör	17.00 - 00.00</li>
 			<li>sön	17.00 - 22.30</li>
 		</ul>
+		<ons-list>
+		    <ons-list-item>
+		      <div class="center">
+		        Visited the restaurant
+		      </div>
+		      <div class="right">
+		        <ons-switch></ons-switch>
+		      </div>
+		    </ons-list-item>
+		</ons-list>
 	  </ons-page>
 	</template>
 
@@ -72,6 +81,16 @@
 			<li>lör	12.00 - 21.00</li>
 			<li>sön	12.00 - 16.00</li>
 		</ul>
+		<ons-list>
+		    <ons-list-item>
+		      <div class="center">
+		        Visited the restaurant
+		      </div>
+		      <div class="right">
+		        <ons-switch></ons-switch>
+		      </div>
+		    </ons-list-item>
+		</ons-list>
 	  </ons-page>
 	</template>
 
@@ -89,14 +108,16 @@
 			<li>lör	11.30 - 00.00</li>
 			<li>sön	11.30 - 00.00</li>
 		</ul>
-	  </ons-page>
-	</template>
-
-	<template id="tab5.html">
-	  <ons-page id="Tab5">
-	    <h1>About</h1>
-	    <p>Here you can find different restaurants from the Yelp application.</p>
-	    <p>But on our application instead</p>
+		<ons-list>
+		    <ons-list-item>
+		      <div class="center">
+		        Visited the restaurant
+		      </div>
+		      <div class="right">
+		        <ons-switch></ons-switch>
+		      </div>
+		    </ons-list-item>
+		</ons-list>
 	  </ons-page>
 	</template>
 

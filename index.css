@@ -1,3 +1,12 @@
 img {
 	width: 300px;
 }
+
+.toolbar {
+	background-color: #F44336;
+}
+
+#header {
+	color: white;
+	font-size: 24px;
+}
